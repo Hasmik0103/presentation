@@ -1,6 +1,6 @@
 ---
-title: "DataOps"
-# subtitle: "My Visuan"
+title: "Title "
+subtitle: "Subttitle"
 author: "Karen Hovhannisyan"
 date: last-modified
 image_path: "img/"
@@ -24,12 +24,9 @@ format:
             .pill { border-radius: 10px; }
             .circle { border-radius: 50%; }
           </style>
+    
 ---
 
-## Objective {.smaller}
 
-- Transform data into a **strategic banking asset**  
-- Eliminate **data silos** and enable **integrated decision-making**  
-- Build a **scalable, governed, and AI-ready organization**
 
-[linkedin](link)
+## test
