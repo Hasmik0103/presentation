@@ -1,44 +1,72 @@
 [
   {
-    "objectID": "index.html#տվյալների-հավաքագրում",
-    "href": "index.html#տվյալների-հավաքագրում",
+    "objectID": "index.html#data-collection",
+    "href": "index.html#data-collection",
     "title": "Final project Citi Bike",
-    "section": "Տվյալների հավաքագրում",
-    "text": "Տվյալների հավաքագրում\nCiti Bike տվյալներ\n-Jersey City 2025–2026 թթ. ամսական ZIP ֆայլեր -CSV ֆայլերի ներբեռնում\nԵղանակային տվյալներ\n-Open-Meteo API -Ջերմաստիճան, տեղումներ, քամի, ամպամածություն և այլն\nՔարտեզային տվյալներ\n-Jersey City թաղամասերի GeoJSON\nՆերբեռնվող տվյալներ\n-2025 հունվար-դեկտեմբեր -2026 հունվար-հունիս"
+    "section": "DATA COLLECTION",
+    "text": "DATA COLLECTION\nCiti Bike Data\n\nJersey City 2025–2026 annual ZIP files\nExtraction of CSV files\n\nWeather Data\n\nOpen-Meteo API\nTemperature, precipitation, wind, cloud cover, etc.\n\nGeographic Data\n\nJersey City neighborhood GeoJSON\n\nData Period\n\n2025: January 2025 – December 2025\n2026: January 2026 – June 2026"
   },
   {
-    "objectID": "index.html#տվյալների-նախապատրաստում",
-    "href": "index.html#տվյալների-նախապատրաստում",
+    "objectID": "index.html#data-preprocessing",
+    "href": "index.html#data-preprocessing",
     "title": "Final project Citi Bike",
-    "section": "Տվյալների նախապատրաստում",
-    "text": "Տվյալների նախապատրաստում\nExtract\n-ZIP ֆայլերի բացում -CSV-ների ներբեռնում\nՄաքրում\n-Սխալների ուղղում -Կրկնօրինակների հեռացում -Սյունակների անվանափոխում\nԱմսաթվերի մշակում\n-started_at -ended_at\nԿոորդինատների ստուգում\n-Կոորդինատների վավերացում\nԲացակայող արժեքների մշակում\n-Բացակայող արժեքների լրացում / հեռացում\nՏվյալների ստանդարտացում\n-Ֆորմատների և միավորների միասնականացում\nԱրդյունք\n-citibike_df -weather_df -neighborhoods_gdf"
+    "section": "DATA PREPROCESSING",
+    "text": "DATA PREPROCESSING\nExtract\n\nExtract ZIP files\nImport CSV files\n\nCleaning\n\nFixing errors\nRemoving duplicates\nRenaming columns"
   },
   {
-    "objectID": "index.html#վերլուծություն-python-ով",
-    "href": "index.html#վերլուծություն-python-ով",
+    "objectID": "index.html#section",
+    "href": "index.html#section",
     "title": "Final project Citi Bike",
-    "section": "Վերլուծություն Python-ով",
-    "text": "Վերլուծություն Python-ով\nExploratory Data Analysis (EDA)\n-Բաշխումներ -Ամփոփ վիճակագրություն\nԹրենդների վերլուծություն\n-Օրական -Շաբաթական -Ամսական\nՕգտատերերի վերլուծություն\n-Member -Casual\nՏարածքային վերլուծություն\n-Ամենաշատ օգտագործվող կայաններ -Թաղամասերի վերլուծություն\nԵղանակի ազդեցություն\n-Եղանակային գործոնների ազդեցությունը ուղևորությունների վրա\nFeature Engineering\n-Նոր հատկանիշների ստեղծում\nԱրդյունք\n-Dashboard-ի համար պատրաստ տվյալների հավաքածու"
+    "section": "",
+    "text": "Date Processing\n-started_at -ended_at\nDistance Calculation\n\nCalculate distance between stations\n\nMissing Value Handling\n\nFill / remove missing values\n\nData Aggregation\n\nCombining data from different sources\n\nOutput\n\ncitibike_df\nweather_df\nneighborhoods_gdf"
   },
   {
-    "objectID": "index.html#postgresql-տվյալների-բազա",
-    "href": "index.html#postgresql-տվյալների-բազա",
+    "objectID": "index.html#analysis-with-python",
+    "href": "index.html#analysis-with-python",
     "title": "Final project Citi Bike",
-    "section": "PostgreSQL տվյալների բազա",
-    "text": "PostgreSQL տվյալների բազա\nPostgreSQL + PostGIS\nՍտեղծված աղյուսակներ\n-rides -weather -neighborhoods -stations\nMaterialized View\n-Materialized View"
+    "section": "ANALYSIS WITH PYTHON",
+    "text": "ANALYSIS WITH PYTHON\nExploratory Data Analysis (EDA)\n\nDistributions, descriptive statistics\n\nTime Series Analysis\n\nDaily, weekly, monthly trends\n\nUser Analysis\n\nMember\nCasual\n\nSpatial Analysis\n\nMost popular routes\nNeighborhood Analysis"
   },
   {
-    "objectID": "index.html#tableau-ի-միացում-extract-ին",
-    "href": "index.html#tableau-ի-միացում-extract-ին",
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
     "title": "Final project Citi Bike",
-    "section": "Tableau-ի միացում Extract-ին",
-    "text": "Tableau-ի միացում Extract-ին\nՄիացում PostgreSQL-ին\n-Host -Port -Database -Username\nData Source\n-Materialized View -mv_tableau_citibike_dashboard\nExtract\nՍտեղծվում է citibike_dashboard.hyper\nԻնչու Extract\n-Ավելի արագ աշխատանք -Փոքր ֆայլի չափ -Աշխատում է Offline -Օպտիմիզացված Query-ներ"
+    "section": "",
+    "text": "Weather Impact\n\nImpact of weather on ride activity\n\nFeature Engineering\n\nCreation of new variables\n\nOutput\n\nData prepared for the Dashboard"
   },
   {
-    "objectID": "index.html#վերջնական-dashboard",
-    "href": "index.html#վերջնական-dashboard",
+    "objectID": "index.html#postgresql-data-warehouse",
+    "href": "index.html#postgresql-data-warehouse",
     "title": "Final project Citi Bike",
-    "section": "Վերջնական Dashboard",
-    "text": "Վերջնական Dashboard\nKPI-ներ\n-Ուղևորություններ -Միջին տևողություն -Ակտիվ օգտատերեր\nԹրենդներ\n-Ժամանակային վերլուծություն\nՔարտեզներ\n-Թաղամասերի և կայանների բաշխում\nԿայանների վերլուծություն\n-Ամենածանրաբեռնված կայաններ\nԵղանակի ազդեցություն\n-Եղանակային պայմանների ազդեցությունը ուղևորությունների վրա\nՖիլտրեր\n-Ամսաթիվ -Օգտատիրոջ տեսակ -Եղանակ -Հեծանիվի տեսակ\npublic.tableau"
+    "section": "POSTGRESQL DATA WAREHOUSE",
+    "text": "POSTGRESQL DATA WAREHOUSE\nPostgreSQL + PostGIS\nCreated Tables\n\nrides\nweather\nneighborhoods\nstations"
+  },
+  {
+    "objectID": "index.html#section-2",
+    "href": "index.html#section-2",
+    "title": "Final project Citi Bike",
+    "section": "",
+    "text": "Materialized View\n\nmv_tableau_citibike_dashboard Prepared data for the Dashboard"
+  },
+  {
+    "objectID": "index.html#tableau-connection-and-extract",
+    "href": "index.html#tableau-connection-and-extract",
+    "title": "Final project Citi Bike",
+    "section": "TABLEAU CONNECTION AND EXTRACT",
+    "text": "TABLEAU CONNECTION AND EXTRACT\nDirect Connection to PostgreSQL\n\nHost\nPort\nDatabase\nUsername\n\nData Source\n\nMaterialized View\nmv_tableau_citibike_dashboard\n\nExtract\nData is saved as citibike_dashboard.hyper\n##\nWhy Extract?\n\nFaster performance\nSmaller file size\nOffline access\nOptimized queries"
+  },
+  {
+    "objectID": "index.html#final-dashboard",
+    "href": "index.html#final-dashboard",
+    "title": "Final project Citi Bike",
+    "section": "FINAL DASHBOARD",
+    "text": "FINAL DASHBOARD\nKPIs\n\nTotal rides, average duration, average distance\n\nTrends\n\nTime-series analysis\n\nRoutes\n\nMost popular routes"
+  },
+  {
+    "objectID": "index.html#section-3",
+    "href": "index.html#section-3",
+    "title": "Final project Citi Bike",
+    "section": "",
+    "text": "Station Analysis\n\nMost popular stations\n\nWeather Impact\n\nImpact of weather on ride activity\n\nFilters\n\nMember type, bike type, date, neighborhood, etc.\n\npublic.tableau"
   }
 ]

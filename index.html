@@ -152,84 +152,174 @@ Hasmik Sargsyan
 
   <p class="date">2026-09-08</p>
 </section>
-<section id="տվյալների-հավաքագրում" class="slide level2">
-<h2>Տվյալների հավաքագրում</h2>
-<h3 id="citi-bike-տվյալներ">Citi Bike տվյալներ</h3>
-<p>-Jersey City 2025–2026 թթ. ամսական ZIP ֆայլեր -CSV ֆայլերի ներբեռնում</p>
-<h3 id="եղանակային-տվյալներ">Եղանակային տվյալներ</h3>
-<p>-Open-Meteo API -Ջերմաստիճան, տեղումներ, քամի, ամպամածություն և այլն</p>
-<h3 id="քարտեզային-տվյալներ">Քարտեզային տվյալներ</h3>
-<p>-Jersey City թաղամասերի GeoJSON</p>
-<h3 id="ներբեռնվող-տվյալներ">Ներբեռնվող տվյալներ</h3>
-<p>-2025 հունվար-դեկտեմբեր -2026 հունվար-հունիս</p>
+<section id="data-collection" class="slide level2">
+<h2>DATA COLLECTION</h2>
+<h3 id="citi-bike-data">Citi Bike Data</h3>
+<ul>
+<li>Jersey City 2025–2026 annual ZIP files</li>
+<li>Extraction of CSV files</li>
+</ul>
+<h3 id="weather-data">Weather Data</h3>
+<ul>
+<li>Open-Meteo API</li>
+<li>Temperature, precipitation, wind, cloud cover, etc.</li>
+</ul>
+<h3 id="geographic-data">Geographic Data</h3>
+<ul>
+<li>Jersey City neighborhood GeoJSON</li>
+</ul>
+<h3 id="data-period">Data Period</h3>
+<ul>
+<li>2025: January 2025 – December 2025</li>
+<li>2026: January 2026 – June 2026</li>
+</ul>
 </section>
-<section id="տվյալների-նախապատրաստում" class="slide level2">
-<h2>Տվյալների նախապատրաստում</h2>
+<section id="data-preprocessing" class="slide level2">
+<h2>DATA PREPROCESSING</h2>
 <h3 id="extract">Extract</h3>
-<p>-ZIP ֆայլերի բացում -CSV-ների ներբեռնում</p>
-<h3 id="մաքրում">Մաքրում</h3>
-<p>-Սխալների ուղղում -Կրկնօրինակների հեռացում -Սյունակների անվանափոխում</p>
-<h3 id="ամսաթվերի-մշակում">Ամսաթվերի մշակում</h3>
+<ul>
+<li>Extract ZIP files</li>
+<li>Import CSV files</li>
+</ul>
+<h3 id="cleaning">Cleaning</h3>
+<ul>
+<li>Fixing errors</li>
+<li>Removing duplicates</li>
+<li>Renaming columns</li>
+</ul>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<h3 id="date-processing">Date Processing</h3>
 <p>-started_at -ended_at</p>
-<h3 id="կոորդինատների-ստուգում">Կոորդինատների ստուգում</h3>
-<p>-Կոորդինատների վավերացում</p>
-<h3 id="բացակայող-արժեքների-մշակում">Բացակայող արժեքների մշակում</h3>
-<p>-Բացակայող արժեքների լրացում / հեռացում</p>
-<h3 id="տվյալների-ստանդարտացում">Տվյալների ստանդարտացում</h3>
-<p>-Ֆորմատների և միավորների միասնականացում</p>
-<h3 id="արդյունք">Արդյունք</h3>
-<p>-citibike_df -weather_df -neighborhoods_gdf</p>
+<h3 id="distance-calculation">Distance Calculation</h3>
+<ul>
+<li>Calculate distance between stations</li>
+</ul>
+<h3 id="missing-value-handling">Missing Value Handling</h3>
+<ul>
+<li>Fill / remove missing values</li>
+</ul>
+<h3 id="data-aggregation">Data Aggregation</h3>
+<ul>
+<li>Combining data from different sources</li>
+</ul>
+<h3 id="output">Output</h3>
+<ul>
+<li>citibike_df</li>
+<li>weather_df</li>
+<li>neighborhoods_gdf</li>
+</ul>
 </section>
-<section id="վերլուծություն-python-ով" class="slide level2">
-<h2>Վերլուծություն Python-ով</h2>
+<section id="analysis-with-python" class="slide level2">
+<h2>ANALYSIS WITH PYTHON</h2>
 <h3 id="exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</h3>
-<p>-Բաշխումներ -Ամփոփ վիճակագրություն</p>
-<h3 id="թրենդների-վերլուծություն">Թրենդների վերլուծություն</h3>
-<p>-Օրական -Շաբաթական -Ամսական</p>
-<h3 id="օգտատերերի-վերլուծություն">Օգտատերերի վերլուծություն</h3>
-<p>-Member -Casual</p>
-<h3 id="տարածքային-վերլուծություն">Տարածքային վերլուծություն</h3>
-<p>-Ամենաշատ օգտագործվող կայաններ -Թաղամասերի վերլուծություն</p>
-<h3 id="եղանակի-ազդեցություն">Եղանակի ազդեցություն</h3>
-<p>-Եղանակային գործոնների ազդեցությունը ուղևորությունների վրա</p>
+<ul>
+<li>Distributions, descriptive statistics</li>
+</ul>
+<h3 id="time-series-analysis">Time Series Analysis</h3>
+<ul>
+<li>Daily, weekly, monthly trends</li>
+</ul>
+<h3 id="user-analysis">User Analysis</h3>
+<ul>
+<li>Member</li>
+<li>Casual</li>
+</ul>
+<h3 id="spatial-analysis">Spatial Analysis</h3>
+<ul>
+<li>Most popular routes</li>
+<li>Neighborhood Analysis</li>
+</ul>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<h3 id="weather-impact">Weather Impact</h3>
+<ul>
+<li>Impact of weather on ride activity</li>
+</ul>
 <h3 id="feature-engineering">Feature Engineering</h3>
-<p>-Նոր հատկանիշների ստեղծում</p>
-<h3 id="արդյունք-1">Արդյունք</h3>
-<p>-Dashboard-ի համար պատրաստ տվյալների հավաքածու</p>
+<ul>
+<li>Creation of new variables</li>
+</ul>
+<h3 id="output-1">Output</h3>
+<ul>
+<li>Data prepared for the Dashboard</li>
+</ul>
 </section>
-<section id="postgresql-տվյալների-բազա" class="slide level2">
-<h2>PostgreSQL տվյալների բազա</h2>
+<section id="postgresql-data-warehouse" class="slide level2">
+<h2>POSTGRESQL DATA WAREHOUSE</h2>
 <h3 id="postgresql-postgis">PostgreSQL + PostGIS</h3>
-<h4 id="ստեղծված-աղյուսակներ">Ստեղծված աղյուսակներ</h4>
-<p>-rides -weather -neighborhoods -stations</p>
+<h4 id="created-tables">Created Tables</h4>
+<ul>
+<li>rides</li>
+<li>weather</li>
+<li>neighborhoods</li>
+<li>stations</li>
+</ul>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
 <h4 id="materialized-view">Materialized View</h4>
-<p>-Materialized View</p>
+<ul>
+<li>mv_tableau_citibike_dashboard Prepared data for the Dashboard</li>
+</ul>
 </section>
-<section id="tableau-ի-միացում-extract-ին" class="slide level2">
-<h2>Tableau-ի միացում Extract-ին</h2>
-<h3 id="միացում-postgresql-ին">Միացում PostgreSQL-ին</h3>
-<p>-Host -Port -Database -Username</p>
+<section id="tableau-connection-and-extract" class="slide level2">
+<h2>TABLEAU CONNECTION AND EXTRACT</h2>
+<h3 id="direct-connection-to-postgresql">Direct Connection to PostgreSQL</h3>
+<ul>
+<li>Host</li>
+<li>Port</li>
+<li>Database</li>
+<li>Username</li>
+</ul>
 <h3 id="data-source">Data Source</h3>
-<p>-Materialized View -mv_tableau_citibike_dashboard</p>
+<ul>
+<li>Materialized View</li>
+<li>mv_tableau_citibike_dashboard</li>
+</ul>
 <h3 id="extract-1">Extract</h3>
-<p>Ստեղծվում է citibike_dashboard.hyper</p>
-<h3 id="ինչու-extract">Ինչու Extract</h3>
-<p>-Ավելի արագ աշխատանք -Փոքր ֆայլի չափ -Աշխատում է Offline -Օպտիմիզացված Query-ներ</p>
+<p>Data is saved as citibike_dashboard.hyper</p>
+<p>##</p>
+<h3 id="why-extract">Why Extract?</h3>
+<ul>
+<li>Faster performance</li>
+<li>Smaller file size</li>
+<li>Offline access</li>
+<li>Optimized queries</li>
+<li></li>
+</ul>
 </section>
-<section id="վերջնական-dashboard" class="slide level2">
-<h2>Վերջնական Dashboard</h2>
-<h3 id="kpi-ներ">KPI-ներ</h3>
-<p>-Ուղևորություններ -Միջին տևողություն -Ակտիվ օգտատերեր</p>
-<h3 id="թրենդներ">Թրենդներ</h3>
-<p>-Ժամանակային վերլուծություն</p>
-<h3 id="քարտեզներ">Քարտեզներ</h3>
-<p>-Թաղամասերի և կայանների բաշխում</p>
-<h3 id="կայանների-վերլուծություն">Կայանների վերլուծություն</h3>
-<p>-Ամենածանրաբեռնված կայաններ</p>
-<h3 id="եղանակի-ազդեցություն-1">Եղանակի ազդեցություն</h3>
-<p>-Եղանակային պայմանների ազդեցությունը ուղևորությունների վրա</p>
-<h3 id="ֆիլտրեր">Ֆիլտրեր</h3>
-<p>-Ամսաթիվ -Օգտատիրոջ տեսակ -Եղանակ -Հեծանիվի տեսակ</p>
+<section id="final-dashboard" class="slide level2">
+<h2>FINAL DASHBOARD</h2>
+<h3 id="kpis">KPIs</h3>
+<ul>
+<li>Total rides, average duration, average distance</li>
+</ul>
+<h3 id="trends">Trends</h3>
+<ul>
+<li>Time-series analysis</li>
+</ul>
+<h3 id="routes">Routes</h3>
+<ul>
+<li>Most popular routes</li>
+</ul>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<h3 id="station-analysis">Station Analysis</h3>
+<ul>
+<li>Most popular stations</li>
+</ul>
+<h3 id="weather-impact-1">Weather Impact</h3>
+<ul>
+<li>Impact of weather on ride activity</li>
+</ul>
+<h3 id="filters">Filters</h3>
+<ul>
+<li>Member type, bike type, date, neighborhood, etc.</li>
+</ul>
 <p><a href="https://public.tableau.com/app/profile/hasmik.sargsyan6355/viz/FinalProjectCitiBike/FinalProjectCitiBikeJerseyCity2025-2026?publish=yes">public.tableau</a></p>
 
 
