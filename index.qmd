@@ -3,7 +3,7 @@ title: "Final project Citi Bike"
 subtitle: "Citi Bike 2025-2026 Jersey City"
 author: "Hasmik Sargsyan"
 date: 09.08.2026
-image_path: "img/"
+image_path: "image/image/Citibikes-NYC-916126092.webp"
 format:
   revealjs: 
     touch: true
@@ -29,149 +29,179 @@ format:
 
 
 
-## Տվյալների հավաքագրում
+## DATA COLLECTION
 
-### Citi Bike տվյալներ
--Jersey City 2025–2026 թթ. ամսական ZIP ֆայլեր
--CSV ֆայլերի ներբեռնում
+### Citi Bike Data
+
+- Jersey City 2025–2026 annual ZIP files
+- Extraction of CSV files
    
-### Եղանակային տվյալներ
--Open-Meteo API
--Ջերմաստիճան, տեղումներ, քամի, ամպամածություն և այլն
-   
-### Քարտեզային տվյալներ
--Jersey City թաղամասերի GeoJSON
+### Weather Data
+
+- Open-Meteo API
+- Temperature, precipitation, wind, cloud cover, etc.
+
+### Geographic Data
+
+- Jersey City neighborhood GeoJSON
   
-### Ներբեռնվող տվյալներ
--2025 հունվար-դեկտեմբեր
--2026 հունվար-հունիս
+### Data Period
+
+- 2025: January 2025 – December 2025
+- 2026: January 2026 – June 2026
 
 
 
-## Տվյալների նախապատրաստում
+## DATA PREPROCESSING
 
 ### Extract
--ZIP ֆայլերի բացում
--CSV-ների ներբեռնում
 
-### Մաքրում
--Սխալների ուղղում
--Կրկնօրինակների հեռացում
--Սյունակների անվանափոխում
+- Extract ZIP files
+- Import CSV files
 
-### Ամսաթվերի մշակում
+### Cleaning
+
+- Fixing errors
+- Removing duplicates
+- Renaming columns
+
+##
+
+
+### Date Processing
 -started_at
 -ended_at
 
-### Կոորդինատների ստուգում
--Կոորդինատների վավերացում
+### Distance Calculation
 
-### Բացակայող արժեքների մշակում
--Բացակայող արժեքների լրացում / հեռացում
+- Calculate distance between stations
 
-### Տվյալների ստանդարտացում
--Ֆորմատների և միավորների միասնականացում
+### Missing Value Handling 
 
-### Արդյունք
--citibike_df
--weather_df
--neighborhoods_gdf
+- Fill / remove missing values
+
+### Data Aggregation
+
+- Combining data from different sources
+
+### Output
+
+- citibike_df
+- weather_df
+- neighborhoods_gdf
 
 
 
-## Վերլուծություն Python-ով
+## ANALYSIS WITH PYTHON
 ### Exploratory Data Analysis (EDA)
--Բաշխումներ
--Ամփոփ վիճակագրություն
 
-### Թրենդների վերլուծություն
--Օրական
--Շաբաթական
--Ամսական
+- Distributions, descriptive statistics
 
-### Օգտատերերի վերլուծություն
--Member
--Casual
+### Time Series Analysis
 
-### Տարածքային վերլուծություն
--Ամենաշատ օգտագործվող կայաններ
--Թաղամասերի վերլուծություն
+- Daily, weekly, monthly trends
 
-### Եղանակի ազդեցություն
--Եղանակային գործոնների ազդեցությունը ուղևորությունների վրա
+### User Analysis
+
+- Member
+- Casual
+
+### Spatial Analysis
+
+- Most popular routes
+- Neighborhood Analysis
+
+##
+
+
+### Weather Impact
+
+- Impact of weather on ride activity
 
 ### Feature Engineering
--Նոր հատկանիշների ստեղծում
 
-### Արդյունք
--Dashboard-ի համար պատրաստ տվյալների հավաքածու
+- Creation of new variables
 
-## PostgreSQL տվյալների բազա
+### Output
+
+- Data prepared for the Dashboard
+
+## POSTGRESQL DATA WAREHOUSE
+
 ### PostgreSQL + PostGIS
-#### Ստեղծված աղյուսակներ
--rides
--weather
--neighborhoods
--stations
+
+#### Created Tables
+- rides
+- weather
+- neighborhoods
+- stations
+  
+
+##
 
 #### Materialized View
--Materialized View
 
-## Tableau-ի միացում Extract-ին
-### Միացում PostgreSQL-ին
+- mv_tableau_citibike_dashboard
+Prepared data for the Dashboard
 
--Host
--Port
--Database
--Username
+## TABLEAU CONNECTION AND EXTRACT
+
+### Direct Connection to PostgreSQL
+
+- Host
+- Port
+- Database
+- Username
 
 ### Data Source
--Materialized View
--mv_tableau_citibike_dashboard
+- Materialized View
+- mv_tableau_citibike_dashboard
 
 ### Extract
-Ստեղծվում է citibike_dashboard.hyper
-
-### Ինչու Extract
--Ավելի արագ աշխատանք
--Փոքր ֆայլի չափ
--Աշխատում է Offline
--Օպտիմիզացված Query-ներ
+Data is saved as citibike_dashboard.hyper
+  
+  
+  ##
 
 
-## Վերջնական Dashboard
-### KPI-ներ
--Ուղևորություններ
--Միջին տևողություն
--Ակտիվ օգտատերեր
+### Why Extract?
 
-### Թրենդներ
--Ժամանակային վերլուծություն
-
-### Քարտեզներ
-
--Թաղամասերի և կայանների բաշխում
-
-### Կայանների վերլուծություն
-
--Ամենածանրաբեռնված կայաններ
-
-### Եղանակի ազդեցություն
-
--Եղանակային պայմանների ազդեցությունը ուղևորությունների վրա
+- Faster performance
+- Smaller file size
+- Offline access
+- Optimized queries
+- 
 
 
-### Ֆիլտրեր
+## FINAL DASHBOARD
 
--Ամսաթիվ
--Օգտատիրոջ տեսակ
--Եղանակ
--Հեծանիվի տեսակ
+### KPIs
+- Total rides, average duration, average distance
+
+### Trends
+
+- Time-series analysis
+
+### Routes
+
+- Most popular routes
+  
+##
 
 
 
+### Station Analysis
+
+- Most popular stations
+
+### Weather Impact
+
+- Impact of weather on ride activity
 
 
+### Filters
+
+- Member type, bike type, date, neighborhood, etc.
 
 
 [public.tableau](https://public.tableau.com/app/profile/hasmik.sargsyan6355/viz/FinalProjectCitiBike/FinalProjectCitiBikeJerseyCity2025-2026?publish=yes)
