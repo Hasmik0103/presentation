@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
 website:
-  title: "Data Vision" # YOUR TITLE
+  title: "Citi Bike" # YOUR TITLE
   # favicon: img/favicon.png YOUR LOGO
 execute:
   freeze: auto

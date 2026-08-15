@@ -1,8 +1,8 @@
 ---
-title: "Title "
-subtitle: "Subttitle"
-author: "Karen Hovhannisyan"
-date: last-modified
+title: "Final project Citi Bike"
+subtitle: "Citi Bike 2025-2026 Jersey City"
+author: "Hasmik Sargsyan"
+date: 09.08.2026
 image_path: "img/"
 format:
   revealjs: 
@@ -29,33 +29,148 @@ format:
 
 
 
-## Slite title 1
+## Տվյալների հավաքագրում
 
-
-1. a
-2. b
-
-
-## Slite title 2
-
-- as
-- as
-
-## Slite title 3
-
-aa 
-
-... 
-
-sdasd
+### Citi Bike տվյալներ
+-Jersey City 2025–2026 թթ. ամսական ZIP ֆայլեր
+-CSV ֆայլերի ներբեռնում
+   
+### Եղանակային տվյալներ
+-Open-Meteo API
+-Ջերմաստիճան, տեղումներ, քամի, ամպամածություն և այլն
+   
+### Քարտեզային տվյալներ
+-Jersey City թաղամասերի GeoJSON
+  
+### Ներբեռնվող տվյալներ
+-2025 հունվար-դեկտեմբեր
+-2026 հունվար-հունիս
 
 
 
-## Slite title 4
+## Տվյալների նախապատրաստում
 
-[Linkedin](https://www.linkedin.com/in/khovhannisyan91/)
+### Extract
+-ZIP ֆայլերի բացում
+-CSV-ների ներբեռնում
 
-## Slite title 5
+### Մաքրում
+-Սխալների ուղղում
+-Կրկնօրինակների հեռացում
+-Սյունակների անվանափոխում
 
-![sample iimage](link)
+### Ամսաթվերի մշակում
+-started_at
+-ended_at
+
+### Կոորդինատների ստուգում
+-Կոորդինատների վավերացում
+
+### Բացակայող արժեքների մշակում
+-Բացակայող արժեքների լրացում / հեռացում
+
+### Տվյալների ստանդարտացում
+-Ֆորմատների և միավորների միասնականացում
+
+### Արդյունք
+-citibike_df
+-weather_df
+-neighborhoods_gdf
+
+
+
+## Վերլուծություն Python-ով
+### Exploratory Data Analysis (EDA)
+-Բաշխումներ
+-Ամփոփ վիճակագրություն
+
+### Թրենդների վերլուծություն
+-Օրական
+-Շաբաթական
+-Ամսական
+
+### Օգտատերերի վերլուծություն
+-Member
+-Casual
+
+### Տարածքային վերլուծություն
+-Ամենաշատ օգտագործվող կայաններ
+-Թաղամասերի վերլուծություն
+
+### Եղանակի ազդեցություն
+-Եղանակային գործոնների ազդեցությունը ուղևորությունների վրա
+
+### Feature Engineering
+-Նոր հատկանիշների ստեղծում
+
+### Արդյունք
+-Dashboard-ի համար պատրաստ տվյալների հավաքածու
+
+## PostgreSQL տվյալների բազա
+### PostgreSQL + PostGIS
+#### Ստեղծված աղյուսակներ
+-rides
+-weather
+-neighborhoods
+-stations
+
+#### Materialized View
+-Materialized View
+
+## Tableau-ի միացում Extract-ին
+### Միացում PostgreSQL-ին
+
+-Host
+-Port
+-Database
+-Username
+
+### Data Source
+-Materialized View
+-mv_tableau_citibike_dashboard
+
+### Extract
+Ստեղծվում է citibike_dashboard.hyper
+
+### Ինչու Extract
+-Ավելի արագ աշխատանք
+-Փոքր ֆայլի չափ
+-Աշխատում է Offline
+-Օպտիմիզացված Query-ներ
+
+
+## Վերջնական Dashboard
+### KPI-ներ
+-Ուղևորություններ
+-Միջին տևողություն
+-Ակտիվ օգտատերեր
+
+### Թրենդներ
+-Ժամանակային վերլուծություն
+
+### Քարտեզներ
+-Թաղամասերի և կայանների բաշխում
+
+### Կայանների վերլուծություն
+-Ամենածանրաբեռնված կայաններ
+
+### Եղանակի ազդեցություն
+-Եղանակային պայմանների ազդեցությունը ուղևորությունների վրա
+
+
+### Ֆիլտրեր
+-Ամսաթիվ
+-Օգտատիրոջ տեսակ
+-Եղանակ
+-Հեծանիվի տեսակ
+
+
+
+
+
+
+
+[public.tableau](https://public.tableau.com/app/profile/hasmik.sargsyan6355/viz/FinalProjectCitiBike/FinalProjectCitiBikeJerseyCity2025-2026?publish=yes)
+
+
 
