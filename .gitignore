@@ -7,6 +7,8 @@ docs/
 # C extensions
 *.so
 
+site_libs
+
 # Distribution / packaging
 .Python
 build/
