@@ -1,37 +1,44 @@
 [
   {
-    "objectID": "index.html#slite-title-1",
-    "href": "index.html#slite-title-1",
-    "title": "Title",
-    "section": "Slite title 1",
-    "text": "Slite title 1\n\na\nb"
+    "objectID": "index.html#տվյալների-հավաքագրում",
+    "href": "index.html#տվյալների-հավաքագրում",
+    "title": "Final project Citi Bike",
+    "section": "Տվյալների հավաքագրում",
+    "text": "Տվյալների հավաքագրում\nCiti Bike տվյալներ\n-Jersey City 2025–2026 թթ. ամսական ZIP ֆայլեր -CSV ֆայլերի ներբեռնում\nԵղանակային տվյալներ\n-Open-Meteo API -Ջերմաստիճան, տեղումներ, քամի, ամպամածություն և այլն\nՔարտեզային տվյալներ\n-Jersey City թաղամասերի GeoJSON\nՆերբեռնվող տվյալներ\n-2025 հունվար-դեկտեմբեր -2026 հունվար-հունիս"
   },
   {
-    "objectID": "index.html#slite-title-2",
-    "href": "index.html#slite-title-2",
-    "title": "Title",
-    "section": "Slite title 2",
-    "text": "Slite title 2\n\nas\nas"
+    "objectID": "index.html#տվյալների-նախապատրաստում",
+    "href": "index.html#տվյալների-նախապատրաստում",
+    "title": "Final project Citi Bike",
+    "section": "Տվյալների նախապատրաստում",
+    "text": "Տվյալների նախապատրաստում\nExtract\n-ZIP ֆայլերի բացում -CSV-ների ներբեռնում\nՄաքրում\n-Սխալների ուղղում -Կրկնօրինակների հեռացում -Սյունակների անվանափոխում\nԱմսաթվերի մշակում\n-started_at -ended_at\nԿոորդինատների ստուգում\n-Կոորդինատների վավերացում\nԲացակայող արժեքների մշակում\n-Բացակայող արժեքների լրացում / հեռացում\nՏվյալների ստանդարտացում\n-Ֆորմատների և միավորների միասնականացում\nԱրդյունք\n-citibike_df -weather_df -neighborhoods_gdf"
   },
   {
-    "objectID": "index.html#slite-title-3",
-    "href": "index.html#slite-title-3",
-    "title": "Title",
-    "section": "Slite title 3",
-    "text": "Slite title 3\naa\n…\nsdasd"
+    "objectID": "index.html#վերլուծություն-python-ով",
+    "href": "index.html#վերլուծություն-python-ով",
+    "title": "Final project Citi Bike",
+    "section": "Վերլուծություն Python-ով",
+    "text": "Վերլուծություն Python-ով\nExploratory Data Analysis (EDA)\n-Բաշխումներ -Ամփոփ վիճակագրություն\nԹրենդների վերլուծություն\n-Օրական -Շաբաթական -Ամսական\nՕգտատերերի վերլուծություն\n-Member -Casual\nՏարածքային վերլուծություն\n-Ամենաշատ օգտագործվող կայաններ -Թաղամասերի վերլուծություն\nԵղանակի ազդեցություն\n-Եղանակային գործոնների ազդեցությունը ուղևորությունների վրա\nFeature Engineering\n-Նոր հատկանիշների ստեղծում\nԱրդյունք\n-Dashboard-ի համար պատրաստ տվյալների հավաքածու"
   },
   {
-    "objectID": "index.html#slite-title-4",
-    "href": "index.html#slite-title-4",
-    "title": "Title",
-    "section": "Slite title 4",
-    "text": "Slite title 4\nLinkedin"
+    "objectID": "index.html#postgresql-տվյալների-բազա",
+    "href": "index.html#postgresql-տվյալների-բազա",
+    "title": "Final project Citi Bike",
+    "section": "PostgreSQL տվյալների բազա",
+    "text": "PostgreSQL տվյալների բազա\nPostgreSQL + PostGIS\nՍտեղծված աղյուսակներ\n-rides -weather -neighborhoods -stations\nMaterialized View\n-Materialized View"
   },
   {
-    "objectID": "index.html#slite-title-5",
-    "href": "index.html#slite-title-5",
-    "title": "Title",
-    "section": "Slite title 5",
-    "text": "Slite title 5\n\n\n\nsample iimage"
+    "objectID": "index.html#tableau-ի-միացում-extract-ին",
+    "href": "index.html#tableau-ի-միացում-extract-ին",
+    "title": "Final project Citi Bike",
+    "section": "Tableau-ի միացում Extract-ին",
+    "text": "Tableau-ի միացում Extract-ին\nՄիացում PostgreSQL-ին\n-Host -Port -Database -Username\nData Source\n-Materialized View -mv_tableau_citibike_dashboard\nExtract\nՍտեղծվում է citibike_dashboard.hyper\nԻնչու Extract\n-Ավելի արագ աշխատանք -Փոքր ֆայլի չափ -Աշխատում է Offline -Օպտիմիզացված Query-ներ"
+  },
+  {
+    "objectID": "index.html#վերջնական-dashboard",
+    "href": "index.html#վերջնական-dashboard",
+    "title": "Final project Citi Bike",
+    "section": "Վերջնական Dashboard",
+    "text": "Վերջնական Dashboard\nKPI-ներ\n-Ուղևորություններ -Միջին տևողություն -Ակտիվ օգտատերեր\nԹրենդներ\n-Ժամանակային վերլուծություն\nՔարտեզներ\n-Թաղամասերի և կայանների բաշխում\nԿայանների վերլուծություն\n-Ամենածանրաբեռնված կայաններ\nԵղանակի ազդեցություն\n-Եղանակային պայմանների ազդեցությունը ուղևորությունների վրա\nՖիլտրեր\n-Ամսաթիվ -Օգտատիրոջ տեսակ -Եղանակ -Հեծանիվի տեսակ\npublic.tableau"
   }
 ]

@@ -9,9 +9,9 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.39">
 
-  <meta name="author" content="Karen Hovhannisyan">
-  <meta name="dcterms.date" content="2026-08-08">
-  <title>Data Vision – Title</title>
+  <meta name="author" content="Hasmik Sargsyan">
+  <meta name="dcterms.date" content="2026-09-08">
+  <title>Citi Bike – Final project Citi Bike</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -139,49 +139,101 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Title</h1>
-  <p class="subtitle">Subttitle</p>
+  <h1 class="title">Final project Citi Bike</h1>
+  <p class="subtitle">Citi Bike 2025-2026 Jersey City</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Karen Hovhannisyan 
+Hasmik Sargsyan 
 </div>
 </div>
 </div>
 
-  <p class="date">2026-08-08</p>
+  <p class="date">2026-09-08</p>
 </section>
-<section id="slite-title-1" class="slide level2">
-<h2>Slite title 1</h2>
-<ol type="1">
-<li>a</li>
-<li>b</li>
-</ol>
+<section id="տվյալների-հավաքագրում" class="slide level2">
+<h2>Տվյալների հավաքագրում</h2>
+<h3 id="citi-bike-տվյալներ">Citi Bike տվյալներ</h3>
+<p>-Jersey City 2025–2026 թթ. ամսական ZIP ֆայլեր -CSV ֆայլերի ներբեռնում</p>
+<h3 id="եղանակային-տվյալներ">Եղանակային տվյալներ</h3>
+<p>-Open-Meteo API -Ջերմաստիճան, տեղումներ, քամի, ամպամածություն և այլն</p>
+<h3 id="քարտեզային-տվյալներ">Քարտեզային տվյալներ</h3>
+<p>-Jersey City թաղամասերի GeoJSON</p>
+<h3 id="ներբեռնվող-տվյալներ">Ներբեռնվող տվյալներ</h3>
+<p>-2025 հունվար-դեկտեմբեր -2026 հունվար-հունիս</p>
 </section>
-<section id="slite-title-2" class="slide level2">
-<h2>Slite title 2</h2>
-<ul>
-<li>as</li>
-<li>as</li>
-</ul>
+<section id="տվյալների-նախապատրաստում" class="slide level2">
+<h2>Տվյալների նախապատրաստում</h2>
+<h3 id="extract">Extract</h3>
+<p>-ZIP ֆայլերի բացում -CSV-ների ներբեռնում</p>
+<h3 id="մաքրում">Մաքրում</h3>
+<p>-Սխալների ուղղում -Կրկնօրինակների հեռացում -Սյունակների անվանափոխում</p>
+<h3 id="ամսաթվերի-մշակում">Ամսաթվերի մշակում</h3>
+<p>-started_at -ended_at</p>
+<h3 id="կոորդինատների-ստուգում">Կոորդինատների ստուգում</h3>
+<p>-Կոորդինատների վավերացում</p>
+<h3 id="բացակայող-արժեքների-մշակում">Բացակայող արժեքների մշակում</h3>
+<p>-Բացակայող արժեքների լրացում / հեռացում</p>
+<h3 id="տվյալների-ստանդարտացում">Տվյալների ստանդարտացում</h3>
+<p>-Ֆորմատների և միավորների միասնականացում</p>
+<h3 id="արդյունք">Արդյունք</h3>
+<p>-citibike_df -weather_df -neighborhoods_gdf</p>
 </section>
-<section id="slite-title-3" class="slide level2">
-<h2>Slite title 3</h2>
-<p>aa</p>
-<p>…</p>
-<p>sdasd</p>
+<section id="վերլուծություն-python-ով" class="slide level2">
+<h2>Վերլուծություն Python-ով</h2>
+<h3 id="exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</h3>
+<p>-Բաշխումներ -Ամփոփ վիճակագրություն</p>
+<h3 id="թրենդների-վերլուծություն">Թրենդների վերլուծություն</h3>
+<p>-Օրական -Շաբաթական -Ամսական</p>
+<h3 id="օգտատերերի-վերլուծություն">Օգտատերերի վերլուծություն</h3>
+<p>-Member -Casual</p>
+<h3 id="տարածքային-վերլուծություն">Տարածքային վերլուծություն</h3>
+<p>-Ամենաշատ օգտագործվող կայաններ -Թաղամասերի վերլուծություն</p>
+<h3 id="եղանակի-ազդեցություն">Եղանակի ազդեցություն</h3>
+<p>-Եղանակային գործոնների ազդեցությունը ուղևորությունների վրա</p>
+<h3 id="feature-engineering">Feature Engineering</h3>
+<p>-Նոր հատկանիշների ստեղծում</p>
+<h3 id="արդյունք-1">Արդյունք</h3>
+<p>-Dashboard-ի համար պատրաստ տվյալների հավաքածու</p>
 </section>
-<section id="slite-title-4" class="slide level2">
-<h2>Slite title 4</h2>
-<p><a href="https://www.linkedin.com/in/khovhannisyan91/">Linkedin</a></p>
+<section id="postgresql-տվյալների-բազա" class="slide level2">
+<h2>PostgreSQL տվյալների բազա</h2>
+<h3 id="postgresql-postgis">PostgreSQL + PostGIS</h3>
+<h4 id="ստեղծված-աղյուսակներ">Ստեղծված աղյուսակներ</h4>
+<p>-rides -weather -neighborhoods -stations</p>
+<h4 id="materialized-view">Materialized View</h4>
+<p>-Materialized View</p>
 </section>
-<section id="slite-title-5" class="slide level2">
-<h2>Slite title 5</h2>
+<section id="tableau-ի-միացում-extract-ին" class="slide level2">
+<h2>Tableau-ի միացում Extract-ին</h2>
+<h3 id="միացում-postgresql-ին">Միացում PostgreSQL-ին</h3>
+<p>-Host -Port -Database -Username</p>
+<h3 id="data-source">Data Source</h3>
+<p>-Materialized View -mv_tableau_citibike_dashboard</p>
+<h3 id="extract-1">Extract</h3>
+<p>Ստեղծվում է citibike_dashboard.hyper</p>
+<h3 id="ինչու-extract">Ինչու Extract</h3>
+<p>-Ավելի արագ աշխատանք -Փոքր ֆայլի չափ -Աշխատում է Offline -Օպտիմիզացված Query-ներ</p>
+</section>
+<section id="վերջնական-dashboard" class="slide level2">
+<h2>Վերջնական Dashboard</h2>
+<h3 id="kpi-ներ">KPI-ներ</h3>
+<p>-Ուղևորություններ -Միջին տևողություն -Ակտիվ օգտատերեր</p>
+<h3 id="թրենդներ">Թրենդներ</h3>
+<p>-Ժամանակային վերլուծություն</p>
+<h3 id="քարտեզներ">Քարտեզներ</h3>
+<p>-Թաղամասերի և կայանների բաշխում</p>
+<h3 id="կայանների-վերլուծություն">Կայանների վերլուծություն</h3>
+<p>-Ամենածանրաբեռնված կայաններ</p>
+<h3 id="եղանակի-ազդեցություն-1">Եղանակի ազդեցություն</h3>
+<p>-Եղանակային պայմանների ազդեցությունը ուղևորությունների վրա</p>
+<h3 id="ֆիլտրեր">Ֆիլտրեր</h3>
+<p>-Ամսաթիվ -Օգտատիրոջ տեսակ -Եղանակ -Հեծանիվի տեսակ</p>
+<p><a href="https://public.tableau.com/app/profile/hasmik.sargsyan6355/viz/FinalProjectCitiBike/FinalProjectCitiBikeJerseyCity2025-2026?publish=yes">public.tableau</a></p>
 
 
-
-<img data-src="link.png" class="r-stretch quarto-figure-center"><p class="caption">sample iimage</p></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="img/favicon.png" class="slide-logo"></p>
